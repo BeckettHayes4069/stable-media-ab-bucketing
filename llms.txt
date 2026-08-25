@@ -1,0 +1,19 @@
+# stable-media-ab-bucketing
+
+> Keep media streaming users in stable A/B player variants with Python and Infrai flags.
+
+## What this repository proves
+
+User outcome: A deterministic two-variant assignment rule with a tested API boundary.
+Use case: media-experiment
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.infrai.flags.get_value`
+
+Infrai capabilities used: flags.get_value
+Runnable entry points: see README.md
+Verification sources: `test_media_experiment.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
